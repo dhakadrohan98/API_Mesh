@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="book" resource="default" engine="innodb" comment="Book Table">
+        <column xsi:type="int" name="book_id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="book_name" comment="Name"/>
+        <column xsi:type="varchar" name="book_details" comment="Details"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="book_id"/>
+        </constraint>
+        <index referenceId="SchemaPatches_Book_ID" indexType="btree">
+            <column name="book_id"/>
+        </index>
+    </table>
+    <table name="stationary" resource="default" engine="innodb" comment="Stationary Table">
+        <column xsi:type="int" name="stationary_id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="stationary_name" comment="Name"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="stationary_id"/>
+        </constraint>
+    </table>
+</schema>

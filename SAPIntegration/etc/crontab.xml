@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+	<group id="default">
+		<job instance="Sigma\SAPIntegration\Cron\ProductCron" method="execute" name="sap_product_cron">
+			<schedule>1 * * * *</schedule>
+		</job>
+        <job instance="Sigma\SAPIntegration\Cron\CustomerCron" method="execute" name="sap_customer_cron">
+			<schedule>1 * * * *</schedule>
+		</job>
+	</group>
+</config>

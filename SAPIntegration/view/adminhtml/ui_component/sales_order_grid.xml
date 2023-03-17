@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <dataSource name="sales_order_grid_data_source" component="Magento_Ui/js/grid/provider">
+        <settings>
+            <updateUrl path="mui/index/render"/>
+        </settings>
+        <aclResource>Magento_Sales::sales_order</aclResource>
+        <dataProvider class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider" name="sales_order_grid_data_source">
+            <settings>
+                <requestFieldName>id</requestFieldName>
+                <primaryFieldName>main_table.entity_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+    <columns name="sales_order_columns">
+        <column name="sap_order_id" sortOrder="76">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">SAP Order ID</label>
+            </settings>
+        </column>
+    </columns>
+</listing>

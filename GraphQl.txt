@@ -1,0 +1,11 @@
+type Query
+{
+    getCustomerData: Response
+    @resolver(class:"Vendor\\Extension\\Model\\Resolver\\Getcustomerdata")
+}
+
+type Response
+{
+    cust_id: String
+    cust_name: String
+}

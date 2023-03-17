@@ -1,0 +1,24 @@
+{
+    "book": {
+        "column": {
+            "book_id": true,
+            "book_name": true,
+            "book_details": true
+        },
+        "index": {
+            "BOOK_BOOK_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "stationary": {
+        "column": {
+            "stationary_id": true,
+            "stationary_name": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

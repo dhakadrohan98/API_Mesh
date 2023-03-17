@@ -1,0 +1,19 @@
+{
+    "sales_order": {
+        "column": {
+            "sap_api_trigger": true,
+            "sap_order_id": true
+        }
+    },
+    "sales_order_grid": {
+        "column": {
+            "sap_order_id": true
+        }
+    },
+    "sales_creditmemo": {
+        "column": {
+            "sap_return_api_trigger": true,
+            "sap_return_order_id": true
+        }
+    }
+}

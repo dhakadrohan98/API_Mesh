@@ -1,0 +1,15 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="Rest_API_logs" resource="default" engine="innodb">
+        <column xsi:type="int" name="id" unsigned="true" nullable="false" identity="true" comment="Id"/>
+        <column xsi:type="varchar" name="api_endpoint" nullable="true" length="500" comment="API Endpoint" />
+        <column xsi:type="varchar" name="request_data" nullable="true" length="1000" comment="Request Data" />
+        <column xsi:type="varchar" name="response_data" nullable="true" length="1000" comment="Response Data" />
+        <column xsi:type="int" name="retry" padding="7" unsigned="false" nullable="true" comment="No of times retried" />
+        <column xsi:type="boolean" name="status" nullable="false" comment="Status" />
+        <column xsi:type="varchar" name="error" nullable="true" length="1000" comment="Error" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="api_mesh" translate="label" sortOrder="10">
+            <label>API Mesh</label>
+        </tab>
+        <section id="retry" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Retry</label>
+            <tab>api_mesh</tab>
+            <resource>Sigma_MeshGrid::config_retry</resource>
+            <group id="configuration" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Retry Values</label>
+                <field id="retry_number" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Retry Number</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

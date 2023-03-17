@@ -1,0 +1,16 @@
+{
+    "Rest_API_logs": {
+        "column": {
+            "id": true,
+            "api_endpoint": true,
+            "request_data": true,
+            "response_data": true,
+            "retry": true,
+            "status": true,
+            "error": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
